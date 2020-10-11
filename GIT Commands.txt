@@ -1,0 +1,47 @@
+Make sure git is installed 
+	(Testing purpose)
+		on your command prompt type --> git    it should show you the git usage command
+
+Heroku Deployment
+
+	# Create a Procfile
+		Note. File name should be exactly same without extension
+
+	# add below lines to the Procfile
+		web: gunicorn app:app
+
+All the below command neeed to be executed from your project folder 
+
+	# git init
+	# git status ----- > everything in re3d
+	# create a simple file from any of the text editor name it as .gitignore
+	# Whatever the files or folders you don't want to push on you github repo. Add there names inside 	the file
+	# git add .
+	# git status -----> everything in green
+	# git commit -m "initial commit"
+
+	# git status -----> No red or green ---> moved from staging area to commit area
+
+Make sure we have the heroku cli installed
+	(Testing purpose)
+		on your command prompt type --> heroku    it should show you the heroku usage command
+
+# heroku login
+# heroku create
+# git remote -v
+# git push heroku master
+# heroku logs  --tail
+
+If it doesn't work - Follow below
+try using below codes one by one sir
+
+// Check for the current url 
+git remote -v
+
+// remove remote url
+git remote rm heroku
+
+
+// re-add the remote url - Not required though
+git remote add heroku https://git.heroku.com/your-repo_name.git
+

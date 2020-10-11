@@ -1,0 +1,9 @@
+GCP CLoud Shell
+Step 1: Click on Activate Cloud Shell ( top right corner)
+Step 2: Once cloud shell is open click on open in editor
+Step 3: git clone git project url 
+Step 4: Get inside the project which you have cloned
+		cd projectfoldername
+Step 5: Select the prject on GCP which you want to use for this cloned project
+		gcloud config set project dogcatgcpgit(Project ID not the Project Name)
+Step 6: gcloud app deploy
